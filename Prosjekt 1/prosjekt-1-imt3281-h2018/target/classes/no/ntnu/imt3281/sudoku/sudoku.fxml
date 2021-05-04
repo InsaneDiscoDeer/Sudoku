@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.imt3281.sudoku.SudokuController">
+   <children>
+      <ButtonBar layoutY="360.0" prefHeight="40.0" prefWidth="600.0" AnchorPane.rightAnchor="0.0">
+        <buttons>
+          <Button fx:id="Start" alignment="CENTER" maxWidth="50.0" mnemonicParsing="false" onAction="#startButton" prefHeight="26.0" text="%start" textAlignment="CENTER" ButtonBar.buttonData="LEFT" />
+        </buttons>
+      </ButtonBar>
+      <GridPane fx:id="gpKing" gridLinesVisible="true" prefHeight="360.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="67.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="67.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="f0" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="f1" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <TextField fx:id="f2" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <TextField fx:id="f3" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="f4" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="f5" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="f6" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="f7" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="f8" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="f9" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <TextField fx:id="f10" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <TextField fx:id="f11" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <TextField fx:id="f12" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="f13" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="f14" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <TextField fx:id="f15" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="f16" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="f17" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <TextField fx:id="f18" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            <TextField fx:id="f19" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+            <TextField fx:id="f20" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+            <TextField fx:id="f21" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <TextField fx:id="f22" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <TextField fx:id="f23" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <TextField fx:id="f24" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <TextField fx:id="f25" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <TextField fx:id="f26" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <TextField fx:id="f27" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="f28" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="f29" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="f30" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="f31" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="f32" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="f33" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <TextField fx:id="f34" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="f35" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="f36" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="f37" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="f38" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <TextField fx:id="f39" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="f40" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="f41" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <TextField fx:id="f42" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="f43" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="f44" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="f45" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <TextField fx:id="f46" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <TextField fx:id="f47" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <TextField fx:id="f48" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="f49" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <TextField fx:id="f50" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <TextField fx:id="f51" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="f52" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <TextField fx:id="f53" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <TextField fx:id="f54" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id="f55" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="f56" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="f57" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <TextField fx:id="f58" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="f59" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="f60" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <TextField fx:id="f61" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="f62" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <TextField fx:id="f63" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="f64" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="f65" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="f66" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="f67" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="f68" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="f69" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <TextField fx:id="f70" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <TextField fx:id="f71" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <TextField fx:id="f72" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="f73" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <TextField fx:id="f74" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <TextField fx:id="f75" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <TextField fx:id="f76" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <TextField fx:id="f77" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <TextField fx:id="f78" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <TextField fx:id="f79" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <TextField fx:id="f80" alignment="CENTER" editable="true" onAction="#onEnter" prefHeight="40.0" prefWidth="67.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
